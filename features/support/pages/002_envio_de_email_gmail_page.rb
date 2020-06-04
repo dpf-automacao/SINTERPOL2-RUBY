@@ -35,7 +35,8 @@ class EnvioDeEmailGmailPage < SitePrism::Page
     def enviar_email
         @nr_aleatorio = rand(1..10000)
         @mensagem = "Este e-mail foi gerado para realização de testes no sistema SINTERPOL - Vinicius Fernando [#{@nr_aleatorio}]"
-        @assunto = "Email gerado por teste automatizado"
+        # @assunto = "Email gerado por teste automatizado"
+        @assunto = "teste"
         @destinatario = "teste.scgpci@dpf.gov.br"
         @email_nao_enviado = "Mensagem é diferente de Mensagem enviada."
         @email_enviado = "Mensagem enviada."
