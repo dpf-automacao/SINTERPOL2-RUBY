@@ -11,6 +11,7 @@ class EmailImportadasPage < SitePrism::Page
     # METODOS PARA CONSULTA
 
     def selecionar_unidade_consulta(unidade)
+        sleep(2)
         unidade_select.click.select(unidade)
     end
 

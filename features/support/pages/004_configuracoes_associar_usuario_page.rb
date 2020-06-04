@@ -36,7 +36,7 @@ class ConfiguracoesAssociarUsuarioPage < SitePrism::Page
     end
 
     def definir_iniciais_usuario
-        if(has_definir_iniciais_btn?(wait:2))
+        if(has_definir_iniciais_btn?(wait:3))
             definir_iniciais_btn.click
         else
             puts "O usuário em questão já realizou a definição de iniciais sendo possível apenas a alteração da mesma."
@@ -64,6 +64,7 @@ class ConfiguracoesAssociarUsuarioPage < SitePrism::Page
     end
 
     def confirmar_alteracao_iniciais
+        sleep(3)
         confirmar_alteracao_iniciais_btn.click
     end
 

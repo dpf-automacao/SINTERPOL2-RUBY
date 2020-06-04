@@ -80,7 +80,7 @@ class ConfiguracoesContaDeEmailPage < SitePrism::Page
         unidade_usuario_input.click.set(unidade_usuario)
         sleep(3)
         unidade_usuario_input.send_keys(:tab)
-        sleep(1)
+        sleep(2)
     end
 
     def excluir_conta_email(nome_conta)
@@ -114,6 +114,7 @@ class ConfiguracoesContaDeEmailPage < SitePrism::Page
     end
 
     def testar_conta_email
+        sleep(3)
         testar_conta_email_btn.click
         wait_until_teste_de_conta_email_modal_visible
         fechar_teste_de_conta_email_btn.click

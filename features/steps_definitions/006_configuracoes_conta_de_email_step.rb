@@ -5,7 +5,8 @@ Quando("eu entro no menu Configuracoes e clico no sub-menu Contas de E-mail") do
     @menu.sub_menu_constas_de_email
 end                                                                   
                                                                               
-Quando("clico para Incluir Conta") do                                         
+Quando("clico para Incluir Conta") do    
+    sleep(2)                                     
     @contas_de_email.incluir_conta_de_email
 end  
 

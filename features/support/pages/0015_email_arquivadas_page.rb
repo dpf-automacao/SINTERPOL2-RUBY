@@ -18,7 +18,7 @@ class EmailArquivadasPage < SitePrism::Page
         dt_final = @data_atual.strftime("%d/%m/%Y")
         wait_until_consultar_mensagens_form_visible
         und_consulta_arquivada_select.select(und)
-        sleep(0.5)
+        sleep(2)
         nome_da_conta_select.select(conta)
         sleep(0.5)
         resp_arquivamento_input.click.set(resp)
@@ -30,6 +30,7 @@ class EmailArquivadasPage < SitePrism::Page
     end
 
     def pesquisar_mensagem_arquivada
+        sleep(1)
         pesquisar_btn.click
     end
 

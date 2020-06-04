@@ -6,6 +6,7 @@ class RelatoriosConsolidadoDocServidorPage < SitePrism::Page
 
 
     def selecionar_unidade(unidade)
+        sleep(2)
         unidade_select.click.select(unidade)
     end
 

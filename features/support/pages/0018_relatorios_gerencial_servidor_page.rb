@@ -7,6 +7,7 @@ class RelatoriosGerencialServidorPage < SitePrism::Page
     element :relatorio_table, "thead[class='dr-table-thead']"
 
     def selecionar_unidade(unidade)
+        sleep(2)
         unidade_select.click.select(unidade)
     end
 

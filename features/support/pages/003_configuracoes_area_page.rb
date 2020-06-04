@@ -18,7 +18,7 @@ class ConfiguracoesAreaPage < SitePrism::Page
 
     def preencher_sigla(sigla)
         sigla_input.click.set(sigla)
-        sleep(5)
+        sleep(3)
         sigla_input.send_keys(:tab)
     end
 
@@ -27,6 +27,7 @@ class ConfiguracoesAreaPage < SitePrism::Page
     end
 
     def preencher_codigo(codigo)
+        sleep(3)
         codigo_input.click.set(codigo)
     end
 

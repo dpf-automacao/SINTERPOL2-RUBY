@@ -39,6 +39,7 @@ class ConfiguracoesProjetoPage < SitePrism::Page
     end
 
     def preencher_codigo_inclusao(codigo_projeto)
+        sleep(2)
         codigo_projeto_input.click.set(codigo_projeto)
     end
 
@@ -63,7 +64,6 @@ class ConfiguracoesProjetoPage < SitePrism::Page
     end
 
     def pesquisar_projeto_consulta
-        binding.pry
         pesquisar_projeto_btn.click
     end
 
@@ -84,34 +84,28 @@ class ConfiguracoesProjetoPage < SitePrism::Page
     end
 
     def pesquisar_projeto_edicao
-        binding.pry
         pesquisar_projeto_btn.click
     end
 
     def alterar_projeto
-        binding.pry
         alterar_projeto_btn.click
     end
     
     def preencher_sigla_editar(sigla)
-        binding.pry
         sigla_projeto_input.click.set(sigla)
         sleep(3)
         sigla_projeto_input.send_keys(:enter)
     end
 
     def preencher_nome_editar(nome_projeto)
-        binding.pry
         nome_projeto_input.click.set(nome_projeto)
     end
 
     def preencher_codigo_editar(codigo_projeto)
-        binding.pry
         codigo_projeto_input.click.set(codigo_projeto)
     end
 
     def salvar_projeto_edicao
-        binding.pry
         salvar_projeto_btn.click
     end
 
@@ -132,14 +126,11 @@ class ConfiguracoesProjetoPage < SitePrism::Page
     end
 
     def pesquisar_projeto_exclusao
-        binding.pry
         pesquisar_projeto_btn.click
     end
 
     def excluir_projeto
-        binding.pry
         excluir_projeto_btn.click
-        binding.pry
     end
 
 

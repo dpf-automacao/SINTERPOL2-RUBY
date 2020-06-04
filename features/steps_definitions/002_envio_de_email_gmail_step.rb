@@ -5,7 +5,7 @@ Quando("eu entro na pagina inicial do gmail") do
 end
 
 Quando("informo email {string} e senha {string} e clico para entrar") do |email, senha|
-
+    sleep(2)
     @gmail.entrar_gmail(email, senha)
 
 end

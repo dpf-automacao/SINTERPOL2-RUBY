@@ -6,6 +6,7 @@ Quando("eu entro no menu Configuracoes e clico no sub-menu Area") do
 end
 
 Quando("clico para Incluir nova Area") do
+    sleep(2)
     @configuracoes.incluir_area
 end
 

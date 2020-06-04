@@ -58,37 +58,29 @@ class EmailARegistrarPage < SitePrism::Page
     end
 
     def arquivar_email
-        binding.pry
         arquivar_btn.click
-        binding.pry
     end
 
     def encaminhar_email
-        binding.pry
         encaminhar_btn.click
-        binding.pry
     end
 
     def registrar_email
-        binding.pry
         registrar_btn.click
-        binding.pry
     end
 
     def nao_registrar_email
-        binding.pry
         nao_registrar_btn.click
-        binding.pry
     end
 
     def mover_email
-        binding.pry
+      
         mover_btn.click
-        binding.pry
+        
     end
 
     def confirmar
-        binding.pry
+       
         ok_btn.click
         sleep(3)
     end
@@ -96,12 +88,12 @@ class EmailARegistrarPage < SitePrism::Page
     # ENCAMINHAR EMAIL
 
     def encaminhar_mensagem_email
-        binding.pry
+     
         encaminhar_msg_btn.click
     end
 
     def escolher_opcao_encaminhamento(opcao_enc)
-        binding.pry
+    
         if(opcao_enc == "Email")
             email_radio_btn.click
         else
@@ -139,6 +131,7 @@ class EmailARegistrarPage < SitePrism::Page
     # REGISTRAR EMAIL
 
     def preencher_numero(numero_doc)
+        sleep(3)
         numero_doc_input.click.set(numero_doc)
     end
 

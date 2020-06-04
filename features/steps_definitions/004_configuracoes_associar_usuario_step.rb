@@ -5,7 +5,8 @@ Quando("eu entro no menu Configuracoes e clico no sub-menu Associar Usuario") do
     @associar_usuario = ConfiguracoesAssociarUsuarioPage.new
 end                                                                              
                                                                                 
-Quando("informo CPF {string} e Nome {string}") do |cpf_usuario, nome_usuario|              
+Quando("informo CPF {string} e Nome {string}") do |cpf_usuario, nome_usuario|  
+    sleep(2)            
     @associar_usuario.preencher_cpf(cpf_usuario)
     @associar_usuario.preencher_nome(nome_usuario)
 end                                                                              

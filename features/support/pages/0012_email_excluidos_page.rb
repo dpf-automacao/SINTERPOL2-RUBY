@@ -16,6 +16,7 @@ class EmailExcluidosPage < SitePrism::Page
     end
 
     def selecionar_nome_da_conta_consulta(nome_da_conta)
+        sleep(2)
         nome_da_conta_select.click.select(nome_da_conta)
     end
 
