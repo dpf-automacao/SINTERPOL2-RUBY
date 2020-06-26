@@ -5,9 +5,9 @@
 Funcionalidade: Documentos Recebidos
 
 @incluir_documento 
-@nao_incluir_novo
 Cenario: Incluir Documento
-    Quando incluir um documento no menu "Documentos Recebidos"
+    Quando entrar no sistema com o usuario "barroso.cbm" e senha "ctidpf"
+    E incluir um documento no menu "Documentos Recebidos"
     E preencher as informacoes do novo documento
     E clicar em salvar
     Entao vejo a mensagem de confirmação

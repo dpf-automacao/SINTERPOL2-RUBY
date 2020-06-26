@@ -12,4 +12,5 @@ gem "site_prism"
 gem "faker"
 gem 'cpf_faker'
 gem "ffi"
+gem 'rake'
 

@@ -1,7 +1,11 @@
+                                                                                         
+Quando("entrar no sistema com o usuario {string} e senha {string}") do |usuario, senha| 
+  @login = LoginPage.new
+  @login.acessar_sinterpol(usuario, senha)
+end                                                                                      
 
 Quando("incluir um documento no menu {string}") do |tipo_menu|                          
-    @login = LoginPage.new
-    @login.acessar_sinterpol(usuario, senha)
+
     @menu = MenuPage.new
     @menu.selecionar_submenu_registros(tipo_menu)
     @documentos = DocumentosRecebidosPage.new

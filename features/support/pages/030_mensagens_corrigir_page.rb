@@ -118,7 +118,7 @@ class MensagemCorrigir < SitePrism::Page
         
         puts 'Anexando arquivo'
 
-        anexar(anexar_arquivo_btn(visible: false)["id"], "features/arquivos/TESTE_PDF.pdf")
+        anexar(anexar_arquivo_btn(visible: false)["id"], "features/arquivos/TESTE_PDF.jpg")
         sleep(0.1)
     
     end

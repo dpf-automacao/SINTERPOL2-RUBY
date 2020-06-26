@@ -6,16 +6,17 @@ Funcionalidade: Responder
 
 @responder_documento
 Cenario: Responder documento
-    Quando pesquisar o documento no menu "Documentos Recebidos"
+    Quando entrar no sistema com usuario "barroso.cbm" e senha "ctidpf" 
+    E pesquisar o documento no menu "Documentos Recebidos"
     E detalhar o doc
     E responder o documento
     Entao eu envio a mensagem criada
 
 
-
 @alterar_documento
 Cenario: Alterar documento
-    Quando pesquisar o documento no menu "Documentos Recebidos"
+    Quando entrar no sistema com usuario "barroso.cbm" e senha "ctidpf"  
+    E pesquisar o documento no menu "Documentos Recebidos"
     E detalhar o doc
     E alterar o documento
     Entao eu salvo o documento
@@ -23,7 +24,8 @@ Cenario: Alterar documento
     
 @vincular_documento
 Cenario: Vincular documento
-    Quando pesquisar o documento no menu "Documentos Recebidos"
+    Quando entrar no sistema com usuario "barroso.cbm" e senha "ctidpf"  
+    E pesquisar o documento no menu "Documentos Recebidos"
     E detalhar o doc
     E vincular o documento
     Entao eu confirmo a vinculação
@@ -31,7 +33,8 @@ Cenario: Vincular documento
 
 @desvincular_documento
 Cenario: Desvincular documento
-    Quando pesquisar o documento no menu "Documentos Recebidos"
+    Quando entrar no sistema com usuario "barroso.cbm" e senha "ctidpf" 
+    E pesquisar o documento no menu "Documentos Recebidos"
     E detalhar o doc
     E desvincular o documento
     Entao eu confirmo a desvinculação
@@ -39,7 +42,8 @@ Cenario: Desvincular documento
 
 @arquivar_documento
 Cenario: Arquivar documento
-    Quando pesquisar o documento no menu "Documentos Recebidos"
+    Quando entrar no sistema com usuario "barroso.cbm" e senha "ctidpf" 
+    E pesquisar o documento no menu "Documentos Recebidos"
     E detalhar o doc
     E arquivar o documento
     Entao eu confirmo a arquivação

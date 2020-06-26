@@ -1,6 +1,6 @@
 Quando("pesquiso o documento no menu {string}") do |tipo_menu|
   @login = LoginPage.new
-  @login.acessar_sinterpol(usuario, senha)
+  @login.acessar_sinterpol(usuario, senha) 
   @menu = MenuPage.new
   @menu.selecionar_submenu_registros(tipo_menu)
   @operacoes = OperacoesPage.new

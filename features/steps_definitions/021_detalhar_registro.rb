@@ -1,6 +1,9 @@
-Quando("pesquisar o documento no menu {string}") do |tipo_menu|   
-    @login = LoginPage.new
-    @login.acessar_sinterpol(usuario, senha)
+Quando("entrar no sistema com usuario {string} e senha {string}") do |usuario, senha|
+  @login = LoginPage.new
+  @login.acessar_sinterpol(usuario, senha)
+end
+
+Quando("pesquisar o documento no menu {string}") do |tipo_menu|
     @menu = MenuPage.new
     @menu.selecionar_submenu_registros(tipo_menu)
     

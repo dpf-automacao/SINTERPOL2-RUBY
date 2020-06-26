@@ -1,6 +1,10 @@
-Quando("pesquisar um documento na tela home") do
+Quando("entrar como usuario {string} e senha {string}") do |usuario, senha|  
   @login = LoginPage.new
-    @login.acessar_sinterpol(usuario, senha)
+  @login.acessar_sinterpol(usuario, senha)
+end                                                                           
+
+Quando("pesquisar um documento na tela home") do
+ 
   @detalhar_home = DetalharHomepage.new
 
   end
